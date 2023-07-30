@@ -1,0 +1,73 @@
+.table {
+  border-collapse: collapse;
+  width: 100%;
+
+  thead {
+    background-color: var(--color-dark-500);
+  }
+
+  tr {
+    border: 0.0625rem solid var(--color-dark-500);
+  }
+
+  th {
+    padding: 0.375rem 1.5rem;
+    text-align: start;
+  }
+
+  td {
+    padding: 0.375rem 1.5rem;
+  }
+}
+
+.cellContainer {
+  display: flex;
+  gap: 0.625rem;
+  align-items: center;
+  word-wrap: break-word;
+
+  .imgContainer {
+    position: relative;
+
+    overflow: hidden;
+
+    width: 7.375rem;
+    height: 3rem;
+
+    border-radius: 0.125rem;
+
+    img {
+      display: block;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  p {
+    display: block;
+  }
+}
+
+.editBlock {
+  display: flex;
+  gap: 0.625rem;
+
+  .button {
+    all: unset;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      transition: color 0.2s ease-in-out;
+    }
+
+    &:hover svg {
+      color: var(--color-accent-500);
+      transition: color 0.2s ease-in-out;
+    }
+  }
+}

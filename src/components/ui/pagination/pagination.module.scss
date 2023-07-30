@@ -1,0 +1,65 @@
+.root {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.pageBtn {
+  all: unset;
+  cursor: pointer;
+  padding: 0 0.5rem;
+  border-radius: 0.125rem;
+
+  &.selected {
+    color: var(--color-dark-900);
+    background-color: var(--color-light-100);
+  }
+
+  &:active {
+    color: var(--color-dark-900);
+    background-color: var(--color-light-100);
+  }
+
+  &:focus {
+    outline: 0.125rem solid var(--color-info-700);
+  }
+
+  &:disabled {
+    cursor: auto;
+  }
+
+  &:hover:not(:disabled) {
+    background-color: var(--color-dark-500);
+  }
+}
+
+.navigationBtn {
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+
+  &:disabled {
+    cursor: auto;
+    color: var(--color-dark-100);
+  }
+
+  &:focus {
+    outline: 0.125rem solid var(--color-info-700);
+  }
+}
+
+.dots {
+  margin-bottom: 0.375rem;
+  padding: 0 0.5rem;
+}
+
+.selectBox {
+  display: flex;
+  gap: 0.375rem;
+  margin-left: 1.125rem;
+}
+
+select {
+  color: #000;
+}
